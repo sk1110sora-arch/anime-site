@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -64,31 +64,56 @@ DOCTYPE html>
       padding-left: 12px;
     }
 
-    .intro {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-      line-height: 1.8;
-    }
-
     .box {
       background: white;
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-      margin-top: 25px;
+      margin-bottom: 40px;
       line-height: 1.8;
+    }
+
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    .character {
+      background: white;
+      padding: 22px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .character h3 {
+      margin-top: 0;
+      color: #6539a3;
+    }
+
+    .character p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #625c69;
     }
 
     .tag {
       display: inline-block;
       background: #eee3fa;
       color: #6539a3;
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 20px;
-      font-size: 13px;
-      margin-bottom: 15px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 10px;
+      color: #6539a3;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
@@ -98,14 +123,6 @@ DOCTYPE html>
       text-align: center;
       padding: 30px 20px;
       font-size: 12px;
-    }
-
-    a.back {
-      display: inline-block;
-      margin-top: 25px;
-      color: #6539a3;
-      font-weight: bold;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -126,11 +143,65 @@ DOCTYPE html>
     <section>
       <h2 class="section-title">efとは？</h2>
 
-      <div class="intro">
+      <div class="box">
         「ef」は、2007年から2008年にかけて放送された
-        恋愛アニメシリーズです。
-        独特な映像表現と音楽、そして登場人物たちの
-        複雑な人間関係が大きな魅力。
+        恋愛アニメシリーズ。
+        独特の映像表現や音楽、そして登場人物たちの
+        複雑な人間関係が大きな魅力です。
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">登場人物</h2>
+
+      <div class="character-grid">
+
+        <div class="character">
+          <span class="tag">主人公</span>
+          <h3>広野 紘</h3>
+          <p>
+            漫画家を目指している高校生。
+            日々の生活や周囲の人々との関係を通して、
+            少しずつ成長していきます。
+          </p>
+        </div>
+
+        <div class="character">
+          <span class="tag">ヒロイン</span>
+          <h3>宮村 みやこ</h3>
+          <p>
+            明るく自由奔放な少女。
+            紘と出会ったことで、物語が大きく動き始めます。
+          </p>
+        </div>
+
+        <div class="character">
+          <span class="tag">ヒロイン</span>
+          <h3>新藤 景</h3>
+          <p>
+            紘の幼なじみ。
+            素直な性格で、物語の中でも重要な存在です。
+          </p>
+        </div>
+
+        <div class="character">
+          <span class="tag">登場人物</span>
+          <h3>麻生 蓮治</h3>
+          <p>
+            駅で千尋と出会う少年。
+            小説を書くことを目指しています。
+          </p>
+        </div>
+
+        <div class="character">
+          <span class="tag">ヒロイン</span>
+          <h3>新藤 千尋</h3>
+          <p>
+            蓮治と出会う少女。
+            彼女の抱える事情が物語の重要な要素となります。
+          </p>
+        </div>
+
       </div>
     </section>
 
